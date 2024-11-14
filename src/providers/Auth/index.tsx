@@ -125,7 +125,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       } catch (e) {
         setUser(null)
-        throw new Error(`${CLOUD_CONNECTION_ERROR}: ${e.message}`)
+        // throw new Error(`${CLOUD_CONNECTION_ERROR}: ${e.message}`)
       }
     }
 

@@ -134,6 +134,7 @@ const syncDocs: PayloadHandler = async req => {
 
     return new Response(JSON.stringify({ success: true }), { status: 200 })
   } catch (err: unknown) {
+    console.log("Error:script:syncDocs ", JSON.stringify(err, null, 2))
     return new Response(JSON.stringify({ message: err, success: false }), { status: 400 })
   }
 }

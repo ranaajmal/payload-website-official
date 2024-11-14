@@ -22,6 +22,7 @@ const SyncDocsButton: React.FC = () => {
       toast.success('Documentation synced successfully')
       setIsSyncing(false)
     } else {
+      console.log('Error:Component:SyncDocsButton ', JSON.stringify(res, null, 2))
       const data = await res.json()
       toast.error(`Failed to sync documentation: ${data.message}`)
       setIsSyncing(false)
