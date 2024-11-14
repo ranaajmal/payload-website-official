@@ -15,7 +15,8 @@ const decodeBase64 = (
   return buff.toString('utf8')
 }
 
-const githubAPI = 'https://api.github.com/repos/payloadcms/payload'
+// const githubAPI = 'https://api.github.com/repos/payloadcms/payload'
+const githubAPI = `${process.env.GITHUB_REPOS_USER_API}/coursework-rn-nativewind-cardlist`
 
 const headers = {
   Accept: 'application/vnd.github.v3+json.html',
